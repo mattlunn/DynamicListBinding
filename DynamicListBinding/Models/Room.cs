@@ -12,5 +12,6 @@ namespace DynamicListBinding.Models
         public string Name { get; set; }
         [Range(1,200)]
         public int Area { get; set; }
+        public string Index { get; set; }
     }
 }

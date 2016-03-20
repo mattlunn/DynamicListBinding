@@ -1,0 +1,6 @@
+﻿@model DynamicListBinding.Models.Building
+@{
+    Layout = null;
+}
+
+@Html.EditorForMany(x => x.Rooms, x => x.Index)

@@ -27,5 +27,14 @@ namespace DynamicListBinding.Controllers
         {
             return View(building);
         }
-	}
+
+        [OutputCache(NoStore = true, Duration = 0, VaryByParam = "*")]
+        public ActionResult AddRoom()
+        {
+            var building = new Building();
+            building.Rooms.Add(new Room());
+
+            return View(building);
+        }
+    }
 }
