@@ -1,0 +1,17 @@
+﻿@model DynamicListBinding.Models.Building
+@{
+    ViewBag.Title = "Create";
+}
+
+@using (Html.BeginForm())
+{ 
+    <h2>Create</h2>
+
+    <h3>Building</h3>
+    @Html.EditorFor(x => x)
+
+    <h3>Rooms</h3>
+    @Html.EditorFor(x => x.Rooms)
+    
+    <input type="submit" />
+}

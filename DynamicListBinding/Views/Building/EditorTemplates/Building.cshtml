@@ -1,0 +1,7 @@
+﻿@model DynamicListBinding.Models.Building
+    
+<div class="form-group">
+    @Html.LabelFor(x => x.Name)
+    @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
+    @Html.ValidationMessageFor(x => x.Name)
+</div>
